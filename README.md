@@ -38,6 +38,6 @@ ng build jbs-star-rating
 ## Publish the Library to NPM
 
 npm login
-cd dist/star-rating
+cd dist/jbs-star-rating
 npm publish --access public
 
