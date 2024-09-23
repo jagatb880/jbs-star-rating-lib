@@ -1,0 +1,12 @@
+<main class="main">
+  <h1>Product Rating</h1>
+  <lib-jbs-star-rating
+  [rating]="3"               
+  [starCount]="5"              
+  [color]="'#f39c12'"          
+  [starSize]="30"              
+  [starSpacing]="20"           
+  [allowHalfStars]="true"      
+  (ratingUpdated)="onRatingUpdated($event)"></lib-jbs-star-rating>
+</main>
+<router-outlet />

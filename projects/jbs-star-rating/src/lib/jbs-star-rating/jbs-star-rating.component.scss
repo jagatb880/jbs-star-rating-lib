@@ -1,0 +1,30 @@
+.star-rating {
+  display: inline-block;
+}
+
+.star {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  font-size: inherit;
+}
+
+.full-star:before {
+  content: '★';
+  color: inherit;
+}
+
+.half-star:before {
+  content: '★';
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  color: inherit;
+}
+
+.empty-star:before {
+  content: '☆';
+  color: inherit;
+}

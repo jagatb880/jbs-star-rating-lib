@@ -1,0 +1,8 @@
+<div class="star-rating" [ngStyle]="{'font-size.px': starSize}">
+  <span *ngFor="let star of ratingArr; index as i" 
+        class="star"
+        [ngStyle]="{'color': color, 'margin-right.px': starSpacing}"
+        (click)="onClick(i + 1)">
+    {{ showIcon(i + 1) }}
+  </span>
+</div>
