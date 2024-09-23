@@ -43,13 +43,14 @@ npm publish --access public
 
 -----------------------------------------------------------
 
-1. Installation
+## Installation
 To use the Star Rating Component in your Angular project, follow the steps below:
 Install the component via npm (assuming you've published it as a library on npm):
 npm install jbs-star-rating@0.0.4
 
 Once installed, import the component into your Angular application.
-2. Import and Configure the Component
+
+## Import and Configure the Component
 In an Angular Standalone Component:
 In your standalone component, you can directly import the Star Rating Component.
 import { JbsStarRatingComponent } from 'jbs-star-rating';
@@ -64,9 +65,10 @@ export class ProductDetailComponent {
 }
 
 
-3. Usage
+## Usage
 You can use the Star Rating Component by adding it to your template with customizable inputs for rating, number of stars, star size, color, and spacing.
 Example Template:
+
 <lib-jbs-star-rating 
   [rating]="4"            <!-- Rating value (4 stars) -->
   [starCount]="5"           <!-- Number of stars (default: 5) -->
@@ -78,7 +80,7 @@ Example Template:
 </lib-jbs-star-rating>
 
 
-4. Example Usage in a Parent Component
+## Example Usage in a Parent Component
 In your parent component, you can manage the rating logic and handle the output event.
 Parent Component TypeScript (product-detail.component.ts):
 
@@ -93,12 +95,14 @@ export class ProductDetailComponent {
 }
 
 Parent Component HTML (product-detail.component.html):
+
 <lib-jbs-star-rating 
   [rating]="currentRating"
   [starCount]="5"
   [color]="'#ffcc00'"
   [starSize]="40"
   [starSpacing]="8"
+  [allowHalfStars]="true"
   (ratingUpdated)="onRatingUpdated($event)">
 </lib-jbs-star-rating>
 
